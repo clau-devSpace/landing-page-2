@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+Body{
+    font-family: "Nunito", sans-serif;
+    background-color: #606c38;
+}
+
+nav{
+    padding: 40px 20px;
+}
+   
+
+.nav-ul{
+   
+    font-weight: 600;
+    list-style: none;
+    display: flex;
+    float: right;
+    gap: 40px;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.nav-ul a{
+    font-family: "Vollkorn", serif;
+    text-decoration: none;
+    color: #C5EBAA;
+    font-size: 18px;
+    padding: 10px;
+    
+}
+
+.logo{
+    width: 200px;
+    height: auto;
+}
+
+.portada{
+    height: 100vh;
+    /*background-image: url("/imagenes/ale-romo-CLiwQXx7kT8-unsplash.jpg");*/
+}
+
+header{
+    padding-top: 90px;
+    padding-left: 45px;
+    color: #fff;
+}
+
+.p1{
+    font-family: "Vollkorn", serif;
+    font-size: 45px;
+    
+}
+
+.p2{
+    font-size: 20px;
+    padding-top: 10px;
+    color: #C5EBAA;
+}
+
+h1{
+    font-family: "Vollkorn", serif;
+    font-weight: 400;
+    text-align: center;
+    padding: 10px;
+    color: #283618;
+    font-size: 45px;
+}
+
+.tratamientos{
+    padding-top: 50px;
+    padding: 50px;
+    height: 100vh;
+  
+}
+
+.tratamientos1{
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+    grid-template-rows: 150px 50px;
+    column-gap: 60px;
+    row-gap: 5px;
+    width: 100%;
+    justify-content: center;
+   
+}
+
+.tratamientos2{
+    display: grid;
+    grid-template-columns: 250px 250px;
+    grid-template-rows: 150px 50px;
+    column-gap: 60px;
+    row-gap: 5px;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    justify-content: center;
+    
+}
+
+.texto{
+    background-color: #FFD0D0;
+    color: #283618;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 8px;
+    border-radius: 10px;
+}
+
+.img2{
+    border-radius: 10px;
+}
+
+.reserva{
+    font-style: italic;
+    font-weight: bold;
+    color:#283618;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
