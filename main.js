@@ -1,22 +1,11 @@
-const abrir = document.getElementById("abrir");
-const cerrar = document.getElementById("cerrar");
-const nav = document.getElementById("nav-menu");
+const nav = document.querySelector('#nav');
+const abrir = document.querySelector('#abrir');
+const cerrar = document.querySelector('#cerrar');
 
-function agregar(){
-    const nav = document.getElementById("nav-menu");
-    nav.classList.add("visible");
-    cerrar.classList.add("visible");
-    abrir.classList.add("invisible");
-    
-};
-
-function quitar(){
-  const nav = document.getElementById("nav-menu");
-  const cerrar = document.getElementById("cerrar");
-  const abrir = document.getElementById("abrir");
-
+abrir.addEventListener("click", ()=> {
+  nav.classList.add("visible");
+  })
+   
+cerrar.addEventListener("click", ()=> {
   nav.classList.remove("visible");
-  cerrar.classList.remove("visible");
-  abrir.classList.remove("invisible");
-  
-};
+  })
