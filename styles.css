@@ -87,9 +87,9 @@ header{
     color: #C5EBAA;
 }
 
-.p1, .p2{
+/*.p1, .p2{
     width: 700px;
-}
+}*/
 
 h1{
     font-family: "Vollkorn", serif;
@@ -102,7 +102,6 @@ h1{
 
 .tratamientos{
     padding: 50px;
-    height: 100vh;
 }
    
 
@@ -174,7 +173,6 @@ h1{
     /*grid-template-rows: 500px; */
     column-gap: 100px;
     justify-content: center;
-    height: 100vh;
     padding-top: 50px;
     padding-bottom: 50px;
    
@@ -216,7 +214,6 @@ h3{
 }
 
 .contacto2{
-    height: 100vh;
     display: flex;
     text-align: center;
     align-items: center;
@@ -264,7 +261,7 @@ h5{
 
 }
 
-@media screen and (min-width: 290px) and (max-width: 480px){
+@media screen and (max-width: 480px){
 
     .nav {
         opacity: 0;
@@ -311,44 +308,32 @@ h5{
         opacity: 1;
         visibility: visible;
     }
-    
 
     .portada{
-       max-width: 100%;
-       display: block;
-       overflow: hidden;
-       align-items: center;
-       text-align: center;
-       justify-content: center;
+      max-width: 270px;
     }
 
     
     header{
-        max-width: 100%;
-        display: block;
         padding-left: 0;
-        padding-top: 300px;
-        align-items: center;
-        text-align: center;
-        overflow: hidden;
+        padding-top: 50px;
+        
     }
 
     .p1{
         font-family: "Vollkorn", serif;
-        font-size: 30px;
+        font-size: 20px;
+        display: flex;
+        flex-wrap: wrap;
     }
     
     .p2{
-        font-size: 20px;
+        font-size: 15px;
         padding-top: 15px;
         color: #C5EBAA;
-    }
-
-    .p1, .p2{
-        max-width: 100%;
-        display: block;
-        align-items: center;
-        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        
     }
     
     .logo{
@@ -361,48 +346,37 @@ h5{
 
     h1{
         font-size: 25px;
-        padding-bottom: 30px;
+        padding: 0;
         text-align: center;
     }
     
     .tratamientos{
-        padding: 10px;
-        overflow: hidden;
-        height: auto;
+        padding: 0;
+        max-width: 270px;
+        
     }
 
-    .tratamientos1{
-        grid-template-columns: 250px;
-        grid-template-rows: 167px 167px 167px;
+    .tratamientos1, .tratamientos2{
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         justify-content: center;
         row-gap: 20px;
+        column-gap: 0;
     }
     
     .tratamientos2{
-        grid-template-columns: 250px;
-        grid-template-rows: 167px 167px;
-        row-gap: 20px;
-        justify-content: center;
         padding-top: 20px;
     }
 
     .circuitos{
         display: grid;
-        grid-template-columns: 250px;
-        grid-template-rows: auto auto;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         row-gap: 50px;
-        justify-content: center;
-        padding-top: 50px;
-        padding-bottom: 50px;
-        height: auto;
        
     }
     
     .circuito{
+        max-width: 270px;
         font-size: 15px;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
         padding-top: 30px;
     }
 
@@ -417,13 +391,15 @@ h5{
         color:#fff;
     }
 
+    .cuotas{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     .contacto2{
-        height: auto;
         display: flex;
         flex-direction: column;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
+        
     }
     
     .datos-contacto{
@@ -438,11 +414,6 @@ h5{
         background-color: #283618;
         width: 50px;
         height: 150px;
-    }
-
-
-    .circuitos, .contacto2{
-        overflow: hidden;
     }
 
     h4{
@@ -471,7 +442,7 @@ h5{
     }
 
     .map{
-        width: 100%;
+        max-width: 250px;
         height: auto;
     }
  
