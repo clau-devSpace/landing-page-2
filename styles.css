@@ -56,7 +56,7 @@ Body{
 }
 
 .portada{
-    height: 100vh;
+    /*height: 100vh;
     /*background-image: url("/imagenes/ale-romo-CLiwQXx7kT8-unsplash.jpg");*/
 }
 
@@ -71,8 +71,10 @@ Body{
 
 header{
     padding-top: 100px;
-    padding-left: 45px;
     color: #fff;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .p1{
@@ -98,10 +100,6 @@ h1{
     font-size: 35px;
     padding: 30px;
     text-align: center;
-}
-
-.tratamientos{
-    padding: 50px;
 }
    
 
@@ -136,7 +134,8 @@ h1{
 
 
 .item1{
-    background-image: url("/imagenes/sauna.png");
+   background-image: url("/imagenes/sauna.png");
+   
 }
 
 .item2{
@@ -258,8 +257,16 @@ h5{
     background-color: #283618;
     padding: 8px;
     border-radius: 50%;
-
 }
+
+.form{
+    padding-top: 50px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+
 
 @media screen and (max-width: 480px){
 
@@ -310,14 +317,16 @@ h5{
     }
 
     .portada{
-      max-width: 270px;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+
     }
 
     
     header{
-        padding-left: 0;
         padding-top: 50px;
-        
+        width: 100%;
     }
 
     .p1{
@@ -333,8 +342,8 @@ h5{
         color: #C5EBAA;
         display: flex;
         flex-wrap: wrap;
-        
     }
+
     
     .logo{
     width: 100px;
@@ -351,20 +360,22 @@ h5{
     }
     
     .tratamientos{
-        padding: 0;
-        max-width: 270px;
-        
+        text-align: center;
+        align-items: center;
+
     }
 
-    .tratamientos1, .tratamientos2{
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        justify-content: center;
-        row-gap: 20px;
-        column-gap: 0;
+    .tratamientos1{
+       grid-template-columns: 250px;
+       grid-template-rows: 167px 167px 167px;
+       row-gap: 20px;
     }
     
     .tratamientos2{
         padding-top: 20px;
+        grid-template-columns: 250px;
+        grid-template-rows: 167px 167px;
+        row-gap: 20px;
     }
 
     .circuitos{
